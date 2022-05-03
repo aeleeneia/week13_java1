@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <button class="plus" onclick="calcSum()">
+            <img src="https://img.icons8.com/emoji/452/plus-emoji.png" alt="plus">
+        </button>
+        <button class="minus" onclick="calcSbtr()">
+            <img src="https://img.icons8.com/emoji/452/minus-emoji.png" alt="minus">
+        </button>
+        <button class="division" onclick="calcDvsn()">
+            <img src="https://img.icons8.com/emoji/452/divide-emoji.png" alt="divide">
+        </button>
+        <button class="multiplication" onclick="calcMltpl()">
+            <img src="https://img.icons8.com/emoji/344/multiply-emoji.png" alt="multiply">
+        </button>
+    </div>
+    <script>
+        function calcSum() {
+            let num1 = prompt(`Введите первое число`);
+            let num2 = prompt(`Введите второе число`);
+            alert(`Результат: ${+num1 + +num2}`);
+        }
+
+        function calcSbtr() {
+            let num3 = prompt(`Введите первое число`);
+            let num4 = prompt(`Введите второе число`);
+            alert(`Результат: ${num3 - num4}`);
+        }
+
+        function calcDvsn() {
+            let num5 = prompt(`Введите первое число`);
+            let num6 = prompt(`Введите второе число`);
+            alert(`Результат: ${num5 / num6}`);
+        }
+
+        function calcMltpl() {
+            let num7 = prompt(`Введите первое число`);
+            let num8 = prompt(`Введите второе число`);
+            alert(`Результат: ${num7 * num8}`);
+        }
+    </script>
+</body>
+
+</html>
