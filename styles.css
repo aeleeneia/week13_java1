@@ -34,3 +34,20 @@ button:hover {
     grid-column: 2/3;
     grid-row: 2/3;
 }
+
+.container-new {
+    margin: 15px;
+}
+
+.operators-btns {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr;
+    gap: 5px;
+    margin: 10px;
+}
+
+.img-new {
+    width: 10%;
+}

@@ -11,8 +11,31 @@
 </head>
 
 <body>
+    <div class="container-new">
+        <div>Число 1</div>
+        <input type="number" id="num-1">
+        <div class="operators-btns">
+            <button id="plus" onclick="">
+                <img class="img-new" src="https://img.icons8.com/emoji/452/plus-emoji.png" alt="plus">
+            </button>
+            <button id="minus" onclick="'">
+                <img class="img-new" src="https://img.icons8.com/emoji/452/minus-emoji.png" alt="minus">
+            </button>
+            <button id="divide" onclick="operator='/'">
+                <img class="img-new" src="https://img.icons8.com/emoji/452/divide-emoji.png" alt="divide">
+            </button>
+            <button id="multiply" onclick="operator='*'">
+                <img class="img-new" src="https://img.icons8.com/emoji/344/multiply-emoji.png" alt="multiply">
+            </button>
+        </div>
+        <div>Число 2</div>
+        <input type="number" id="num-2"><br>
+        <div>Результат</div>
+        <p id="result"></p>
+    </div>
+
     <div class="container">
-        <button class="plus" onclick="calcSum()">
+        <button class="plus" onclick="calc">
             <img src="https://img.icons8.com/emoji/452/plus-emoji.png" alt="plus">
         </button>
         <button class="minus" onclick="calcSbtr()">
@@ -25,28 +48,45 @@
             <img src="https://img.icons8.com/emoji/344/multiply-emoji.png" alt="multiply">
         </button>
     </div>
+
     <script>
+        var result;
+        var operator;
+        var num1New = Number(document.getElementById("num-1"));
+        var num2New = Number(document.getElementById("num-2"));
+
+        function calc(num1New, num2New, operator) {
+            if (operator == +)
+                return num1New + num2New;
+            else (oeprator == -)
+            return num1New - num2New;
+
+        }
+
+
+
+
         function calcSum() {
-            let num1 = prompt(`Введите первое число`);
-            let num2 = prompt(`Введите второе число`);
+            const num1 = prompt(`Введите первое число`);
+            const num2 = prompt(`Введите второе число`);
             alert(`Результат: ${+num1 + +num2}`);
         }
 
         function calcSbtr() {
-            let num3 = prompt(`Введите первое число`);
-            let num4 = prompt(`Введите второе число`);
+            const num3 = prompt(`Введите первое число`);
+            const num4 = prompt(`Введите второе число`);
             alert(`Результат: ${num3 - num4}`);
         }
 
         function calcDvsn() {
-            let num5 = prompt(`Введите первое число`);
-            let num6 = prompt(`Введите второе число`);
+            const num5 = prompt(`Введите первое число`);
+            const num6 = prompt(`Введите второе число`);
             alert(`Результат: ${num5 / num6}`);
         }
 
         function calcMltpl() {
-            let num7 = prompt(`Введите первое число`);
-            let num8 = prompt(`Введите второе число`);
+            const num7 = prompt(`Введите первое число`);
+            const num8 = prompt(`Введите второе число`);
             alert(`Результат: ${num7 * num8}`);
         }
     </script>
